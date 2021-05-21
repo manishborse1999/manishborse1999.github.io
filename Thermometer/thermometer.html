@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<style>
+    .inner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fa{
+        font-size: 100px;
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <div class="inner">   
+            <h1 class="main-heading">Thermometer</h1><span id="change" class="fa"></span>
+</div>
+</div>
+
+</body>
+
+<script>
+const thermo=()=>{
+let change=document.getElementById("change");
+change.innerHTML= "&#xf2cb";
+change.style.color="green"
+
+setTimeout(()=>{
+    change.innerHTML= "&#xf2ca";
+    change.style.color="green"
+},1000)
+setTimeout(()=>{
+    change.innerHTML= "&#xf2c9";
+},2000)
+setTimeout(()=>{
+    change.innerHTML= "&#xf2c8";
+    // change.style.color=""
+},3000)
+setTimeout(()=>{
+    change.innerHTML= "&#xf2c7";
+    change.style.color="red"
+},4000)
+
+}
+
+thermo();
+setInterval(thermo,5000)
+
+</script>
+
+</html>
