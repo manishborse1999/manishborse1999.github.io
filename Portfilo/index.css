@@ -20,7 +20,7 @@
 .image{
     border-radius: 73PX;
     width: 32vw;
-    height: 70vh;
+    height: auto;
 }
 
 .right{
