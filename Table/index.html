@@ -9,11 +9,17 @@
 
 <style>
 .container{
+    width: 98vw;
+    height: 97vh;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 0% 0%;
+    padding: 0% 0%;
+    color: white;
+
 }
     .tab{
         border:1px solid black
@@ -36,11 +42,26 @@ tr,td,th{
 .mobno{
     background-color: yellowgreen;
 }
+.btn{
+    background-color: white;
+}
+.text{
+}
+
+.darkmode{
+    background-color: white;
+    color: black;
+    /* border: 2px solid black; */
+}
+
 
 </style>
 <body>
     <div class="container">
-    <h1>Table Data Fetched From API</h1>
+    <h1 class="text">Table Data Fetched From API</h1>
+    <div>
+        <button class="btn" type="submit">Toggle(Dark Mode) </button>
+    </div><br>
 
         <table class="tab">
             <tr>
@@ -59,6 +80,8 @@ tr,td,th{
                 <td></td>
             </tr> -->
         </table>
+
+
     </div>
     <script src="index.js"></script>
 </body>
