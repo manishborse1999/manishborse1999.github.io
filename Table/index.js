@@ -1,5 +1,3 @@
-// const fetch = require("node-fetch");
-
 function fetchdata(){
 fetch("https://reqres.in/api/users/")
 .then(resp=> resp.json())
@@ -22,3 +20,13 @@ fetch("https://reqres.in/api/users/")
 }
 
 fetchdata();
+
+const btn=document.querySelector(".btn");
+const cont=document.querySelector(".container");
+const text=document.querySelector(".text")
+ btn.addEventListener("click",()=>{
+
+    cont.classList.toggle("darkmode");
+// cont.style.backgroundColor="white";
+// text.style.color="black";
+})
